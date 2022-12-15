@@ -8,7 +8,7 @@
 </p>
 
 ​
-¡Bienvenidos! Mi nombre es Leonel Facundo Balleis, al momento de hacer este proyecto me encuentro cursando la etapa de Labs para la carrera de Data Science de SoyHenry. A continuación voy a describir el proyecto, sus objetivos y la conclusión a la cual llegue, luego de realizar un exaustivo analisis de los diferentes modelos (LogisticRegression, KNeighborsClassifier, RandomForestClassifier, DecisionTreeClassifier).
+¡Bienvenidos! Mi nombre es Leonel Facundo Balleis, al momento de hacer este proyecto me encuentro cursando la etapa de Labs para la carrera de Data Science de SoyHenry. A continuación voy a describir el proyecto, sus objetivos y la conclusión a la cual llegue, luego de realizar un exaustivo analisis de los diferentes modelos .
 
 
 ## Descripción 
@@ -27,9 +27,11 @@ Un importante Centro de Salud lo ha contratado con el fin de poder predecir si u
 ## **Explicación de los contenidos del Repositorio:**
 ​
 Se proveen los siguientes archivos :
-- La carpeta 'datasets' que contiene 3 archivos: 'hospitalizaciones_train.csv','hospitalizaciones_test.csv','LeoBalleis.csv(este último es la predicción que se subió al dashboard)
-- IMPORTANTE 4 archivos .ipynb en orden numérico, cada uno de estos contiene todo el proceso de armado del modelo con la diferencia que el último '04final.ipynb' contiene el modelo que elegí para este proyecto.
+- La carpeta 'datasets' que contiene 2 archivos: 'hospitalizaciones_train.csv','hospitalizaciones_test.csv'.
+- En el notebook 04final se encuentra el código comentado paso por paso, explicando las decisiones tomadas.
+- En el archivo DecisionTree_model.pkl se encuentra el modelo de árbol de decisión creado.
 - Archivo ' README.md'.
+- LeoBalleis.csv es el csv con la predicciones.
 
 
 ## **Métrica a utilizar**
@@ -56,10 +58,13 @@ Se proveen los siguientes archivos :
 
 + matplotlib.
 
++ Numpy.
+
++ Joblib
 
 
 ## CONCLUSION
 
-Trabajando en el proyecto que busca predecir la instancia hospitalaria de los pacientes aplique cuatro modelos: LogisticRegression, KNeighborsClassifier, RandomForestClassifier y DecisionTreeClassifier; Los cuales fui descartando hasta llegar a elegir el DecisionTreeClassifier considerando que tiene el mejor desempeño en cuanto a la Precisión, Exatitud, Recall,f1_score y curva roc.
+Trabajando en el proyecto que busca predecir la instancia hospitalaria de los pacientes aplique 2 modelos: LogisticRegression y DecisionTreeClassifier; Los cuales fui descartando hasta llegar a elegir el DecisionTreeClassifier considerando que tiene el mejor desempeño en cuanto a la Precisión, Exatitud, Recall,f1_score y curva roc.
 Gracias a mi experiencia laboral hospitalaria y analisando las metricas en consideracion, he llegado a la conclusion de que priorizo tener un recall más alto que la precisión porque estimo mejor tener mas falsos positivos (gente que se va  a quedar mas de 8 dias pero no lo hace) que el caso contrario tener mas falsos negativos (gente que no se va  a quedar mas de 8 dias pero lo hace) y encontrarme en la situacion de no tener camas.
 
